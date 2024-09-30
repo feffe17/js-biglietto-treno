@@ -16,10 +16,14 @@ let prezzo = chilometri * 0.21;
 
 console.log (chilometri , eta);
 
+let minorenne = (prezzo - ((prezzo / 100) * 20))
+let magiorenne = (prezzo - ((prezzo / 100) * 40))
+
+
 if(eta < 18){
-    alert("il prezzo del biglietto è di " + (prezzo - ((prezzo / 100) * 20)).toFixed(2) + "€");
+    alert("il prezzo del biglietto è di " + minorenne.toFixed(2) + "€");
 } else if(eta > 65){
-    alert("il prezzo del biglietto è di " + (prezzo - ((prezzo / 100) * 40)).toFixed(2) + "€");
+    alert("il prezzo del biglietto è di " + magiorenne.toFixed(2) + "€");
 } else{
-    alert("il prezzo del biglietto è di " + (prezzo.toFixed(2) + "€"));
+    alert("il prezzo del biglietto è di " + prezzo.toFixed(2) + "€");
 }
