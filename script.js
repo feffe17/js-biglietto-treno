@@ -20,4 +20,6 @@ if(eta < 18){
     alert("il prezzo del biglietto è di " + (prezzo - ((prezzo / 100) * 20)).toFixed(2) + "€");
 } else if(eta > 65){
     alert("il prezzo del biglietto è di " + (prezzo - ((prezzo / 100) * 40)).toFixed(2) + "€");
+} else{
+    alert("il prezzo del biglietto è di " + (prezzo.toFixed(2) + "€"));
 }
